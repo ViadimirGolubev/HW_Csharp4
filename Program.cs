@@ -33,6 +33,25 @@
 // 82 -> 10
 // 9012 -> 12
 
+Console.WriteLine("Введите число");
+int num = Convert.ToInt32(Console.ReadLine());
+int num1 = num%10;
+Console.WriteLine(num1);
+
+// int x()
+// {
+//     int result = 1;
+//     int count = 1;
+//     while (count <= num)
+//     {
+//         result = result * count;
+//         count = count + 1;
+//     }
+//     return result;
+// }
+// Console.WriteLine(x());
+
+
 
 
 //---------------------------------- Задача 29---------------------------------
