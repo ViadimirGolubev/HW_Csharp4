@@ -4,6 +4,27 @@
 // 3, 5 -> 243 (3⁵)
 // 2, 4 -> 16
 
+// Console.WriteLine("введите число A");
+// double num = Convert.ToInt32(Console.ReadLine());
+
+// Console.WriteLine("введите число B");
+// double num2 = Convert.ToInt32(Console.ReadLine());
+
+// double ProductOfNumbers()
+// {
+//     double work=1;
+//     double count =1;
+
+//     while (count<=num2)
+//     {
+//         work= work*num;
+//         count=count+1;
+//     }
+
+//     return work;
+// }
+// double result=ProductOfNumbers();
+// Console.WriteLine(result);
 
 
 // ---------------------------------Задача 27-----------------------------------
@@ -19,6 +40,19 @@
 // 1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
 // 6, 1, 33 -> [6, 1, 33]
 
+// void CreateArray()
+// {
+//     int[] arr = new int[8];
+//     int count = 0;
+//     while(count < arr.Length)
+//     {
+//         arr [count] = new Random().Next();
+//         Console.Write($"{arr[count]} ");
+//         count++;
+//     }
+    
+// }
+// CreateArray();
 
 
 
@@ -148,55 +182,6 @@
 
 
 
-//дз3 19
-
-// Console.WriteLine("Введите пятизначное число");
-// int num = Convert.ToInt32(Console.ReadLine());
-
-// if ((num<10000)||(num>99999))
-// {
-//     Console.WriteLine($"Число {num} не пятизначное.");
-    
-// }
-// else
-// {
-//     int a=num%10;
-//     int b=(num%100)/10;
-//     int c=(num/1000)%10;
-//     int d=num/10000;
-
-//     if (a==d&&b==c)
-//     {
-//         Console.WriteLine($"Число {num} - полиндром.");
-//     }
-    
-//     else
-//     {
-//         Console.WriteLine($"Число {num} - не полиндром.");
-//     }
-// }
-
-
-//вар2
-// Console.WriteLine("Введите число: ");
-// string numText = Console.ReadLine();
-
-// int numLength = numText.Length;
-
-// while (numLength == 5)
-// {
-//     if (numText[0] == numText[4] && numText[1] == numText[3])
-//     {
-        
-//         Console.WriteLine($"{numText} - Палиндром");
-//     } else {
-//         Console.WriteLine($"{numText} - Не палиндром");
-//     }
-//     return;
-// }
-// Console.WriteLine($"{numText} - Введите 5 чисел!");
-
-
 
 // 
 // int Max(int arg1, int arg2, int arg3)
@@ -230,52 +215,52 @@
 // index ++; 
 // }
 
-void FillArray(int[] collection) 
-{
-int length = collection.Length; 
-int index = 0;
-while (index < length)
-{
-collection[index] = new Random().Next(1, 10); 
-//index = index + 1;
-index++;
-}
-}
-void PrintArray(int[] col)
-{
-int count = col.Length;
-int position = 0;
-while (position < count)
-{
-Console.WriteLine(col[position]);
-position++;
-}
-}
+// void FillArray(int[] collection) 
+// {
+// int length = collection.Length; 
+// int index = 0;
+// while (index < length)
+// {
+// collection[index] = new Random().Next(1, 10); 
+// //index = index + 1;
+// index++;
+// }
+// }
+// void PrintArray(int[] col)
+// {
+// int count = col.Length;
+// int position = 0;
+// while (position < count)
+// {
+// Console.WriteLine(col[position]);
+// position++;
+// }
+// }
 
-int IndexOf(int[] collection, int find) 
-{
-int count = collection.Length; 
-int index = 0;
-int position = -1;
-while (index < count)
-{
-if(collection[index] == find)
-{
-  position = index;
-  break;
-}
-index++; 
-}
-return position;
- }
+// int IndexOf(int[] collection, int find) 
+// {
+// int count = collection.Length; 
+// int index = 0;
+// int position = -1;
+// while (index < count)
+// {
+// if(collection[index] == find)
+// {
+//   position = index;
+//   break;
+// }
+// index++; 
+// }
+// return position;
+//  }
 
-int[] array = new int[10];
-FillArray(array);
-array[4]=4;
-array[8]=4;
-PrintArray(array);
-Console.WriteLine();
+// int[] array = new int[10];
+// FillArray(array);
+// array[4]=4;
+// array[8]=4;
+// PrintArray(array);
+// Console.WriteLine();
 
 
-int pos = IndexOf(array, 444);
-Console.WriteLine(pos);
+// int pos = IndexOf(array, 444);
+// Console.WriteLine(pos);
